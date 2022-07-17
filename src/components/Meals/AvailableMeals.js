@@ -11,7 +11,7 @@ const AvailableMeals = () => {
 
   useEffect(()=> {
     const fetchMeals = async () => {
-      const response = await fetch('https://foody-382d4-default-rtdb.asia-southeast1.firebasedatabase.app/meals.js');
+      const response = await fetch('https://foody-382d4-default-rtdb.asia-southeast1.firebasedatabase.app/meals.json');
 
       if (!response.ok) {
         throw new Error('Something went wrong!');
